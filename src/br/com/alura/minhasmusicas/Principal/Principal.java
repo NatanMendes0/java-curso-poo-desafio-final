@@ -1,5 +1,6 @@
 package br.com.alura.minhasmusicas.Principal;
 
+import br.com.alura.minhasmusicas.modelos.MinhasPreferidas;
 import br.com.alura.minhasmusicas.modelos.Musica;
 import br.com.alura.minhasmusicas.modelos.Podcast;
 
@@ -23,7 +24,7 @@ public class Principal {
 
         //obj da classe Podcast instanciado
         Podcast meuPodcast = new Podcast();
-        meuPodcast.setTitulo("Bolha dev");
+        meuPodcast.setTitulo("BolhaDev");
         meuPodcast.setApresentador("Marcus Mendes");
 
         //incrementa as reproduções da musica 5000 vezes
@@ -35,5 +36,15 @@ public class Principal {
         for (int i = 0; i < 1000; i++) {
             meuPodcast.curte();
         }
+
+        /*
+        * utiliza conceitos de encapsulamento + sobrescritas nas
+        * classes Musica e Podcast + returns na classe
+        * MinhasPreferidas
+        */
+
+        MinhasPreferidas preferidas = new MinhasPreferidas();
+        preferidas.inclui(meuPodcast);
+        preferidas.inclui(minhaMusica);
     }
 }

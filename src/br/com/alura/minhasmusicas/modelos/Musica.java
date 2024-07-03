@@ -26,4 +26,15 @@ public class Musica extends Audio{
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
+    //classifica a música a partir das reproduções.
+    //músicas acima de 2000 reproduções são excelentes (nota 10), abaixo disso, são boas (nota 7).
+    @Override
+    public int getClassificacao() {
+        if(this.getTotalReproducoes() > 2000){
+            return 10;
+        } else {
+            return 7;
+        }
+    }
 }
