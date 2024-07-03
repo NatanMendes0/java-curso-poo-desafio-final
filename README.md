@@ -72,35 +72,3 @@ public class Filme extends Titulo implements Classificavel {
 ### Encapsulamento
 
 O encapsulamento é a prática de esconder a implementação interna de uma classe e expor apenas o que é necessário através de métodos públicos.
-
-## Instalando o Repositório
-
-Para configurar e executar o projeto, siga os passos abaixo:
-
-1. **Clone o Repositório**
-    
-    ```bash
-    git clone <https://github.com/seu-usuario/seu-repositorio.git>
-    
-    ```
-    
-2. **Navegue até o Diretório do Projeto**
-    
-    ```bash
-    cd seu-repositorio
-    
-    ```
-    
-3. **Compile o Projeto**
-    
-    ```bash
-    javac -d bin src/**/*.java
-    
-    ```
-    
-4. **Execute a Classe Principal**
-    
-    ```bash
-    java -cp bin br.com.alura.minhasmusicas.Principal.Principal
-    
-    ```
